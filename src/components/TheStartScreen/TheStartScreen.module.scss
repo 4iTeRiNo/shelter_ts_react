@@ -1,0 +1,16 @@
+.welcome {
+  display: grid;
+  grid-template-columns: minmax(310px, 460px ) minmax(50%, auto);
+  margin-top: 5.625rem;
+  column-gap: 42px;
+}
+.wrapper {
+    margin-top: 163px;
+}
+
+.logo{
+  display: block;
+  align-items: end;
+  right: 0;
+  
+}

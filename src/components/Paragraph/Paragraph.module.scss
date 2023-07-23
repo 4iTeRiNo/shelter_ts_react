@@ -1,0 +1,11 @@
+.paragraph {
+    display: grid;
+    align-self: start;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.938rem;
+    line-height: 160%;
+    margin-top: 42px;
+    color: var(--text-welcome);
+}

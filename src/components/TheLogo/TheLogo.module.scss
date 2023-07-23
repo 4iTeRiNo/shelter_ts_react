@@ -1,0 +1,23 @@
+.logo {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  letter-spacing: 0.06em;
+  color: var(--color-primary);
+  line-height: 85%;
+}
+.span {
+  font-family: "Arial";
+  color: #ffff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.813rem;
+  line-height: 0.938rem;
+  letter-spacing: 0.1em;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}

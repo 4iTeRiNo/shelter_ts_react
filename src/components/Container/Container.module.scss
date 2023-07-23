@@ -1,0 +1,29 @@
+.container {
+  padding: 30px 40px;
+  background: url(../../assets/welcome/background-.png),
+    radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
+  overflow: hidden;
+}
+// .overfloyHidden {
+// 	overflow-y: hidden;
+// }
+// .wrapper {
+// 	max-width: $content-width;
+// 	margin: 0 auto;
+
+// 	@media (max-width: 1275px) and (min-width:770px) {
+// 	padding: 0 30px;
+// 	}
+
+// 	@media (max-width: 700px) and (min-width:321px) {
+// 		padding: 0 20px;
+// 		}
+
+// 	@include media-tablet {
+// 		max-width: $content-width-tablet;
+// 	}
+
+// 	@include media-mobile {
+// 		max-width: $content-width-mobile;
+// 	}
+// }

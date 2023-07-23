@@ -1,0 +1,20 @@
+.button {
+  margin-top: 42px;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 110%;
+  border: 2px solid var(--color-primary);
+  background-color: var(--color-primary);
+  color: var(--color-buttons);
+  border-radius: 100px;
+  padding: 15px 45px;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--color-buttons-hover);
+    transition: background ease-in 0.3s;
+  }
+}

@@ -1,0 +1,9 @@
+.navBar {
+  justify-self: end;
+
+  .container {
+    display: flex;
+    flex-direction: row;;
+    column-gap: 2.188rem;
+  }
+}
