@@ -1,16 +1,21 @@
 .welcome {
   display: grid;
-  grid-template-columns: minmax(310px, 460px ) minmax(50%, auto);
+  grid-template-columns: minmax(310px, 460px) minmax(50%, auto);
   margin-top: 5.625rem;
   column-gap: 42px;
 }
 .wrapper {
-    margin-top: 163px;
+  margin-top: 163px;
 }
 
-.logo{
-  display: block;
+.svgContainer {
+  display: flex;
+  position: relative;
+  max-width: 100%;
+  justify-content: end;
   align-items: end;
-  right: 0;
-  
+  .logo {
+    max-width: 100%;
+    vertical-align: middle;
+  }
 }
