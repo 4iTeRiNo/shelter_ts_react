@@ -1,1 +1,25 @@
-.localInfo {}
+.localInfo {
+  width: 302px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.625rem;
+  margin: 0 auto;
+  padding-top: 1.2rem;
+  align-self: start;
+
+  .link {
+    position: relative;
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 115%;
+    color: var(--color-primary);
+    letter-spacing: 0.06em;
+    transition: var(--transition-hover);
+
+    &:hover {
+      color: #e9a676d8;
+    }
+  }
+}

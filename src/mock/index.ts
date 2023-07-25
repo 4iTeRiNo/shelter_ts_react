@@ -1,8 +1,8 @@
-import { localInfo } from "../components/types"
+import { localInfo } from "../types";
 
-export const InfoComponyDefoult: localInfo = {
+export const InfoComponyDefault: localInfo = {
     email: 'email@shelter.com',
     addressOne:'1 Central Street, Boston (entrance from the store)',
-    telephone: 136745677554,
+    telephone: +136745677554,
     addressTwo:'18 South Park, London',
 }
