@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
 import { Htag } from "../Htag";
 import styles from "./LocalInfo.module.scss";
+import { ReactComponent as IconEmail } from "../../assets/svg/icon-email.svg";
+import { ReactComponent as IconPhone } from "../../assets/svg/phone.svg";
+import { ReactComponent as IconPoint } from "../../assets/svg/icon-marker.svg";
 import { localInfo } from "../../types";
 
 interface LocalInfoProps extends localInfo {}
@@ -15,27 +18,39 @@ export const LocalInfo = ({
     <>
       <div className={styles.localInfo}>
         <Htag tag="h2" children="For questions and suggestions" />
-        <Link to={`mailto:${email}`} className={styles.link} children={email} />
-        <Link
-          to={`tel:+${telephone}`}
-          className={styles.link}
-          children={telephone}
-        />
+        <div className={styles.containerLink}>
+          <IconEmail />
+          <Link to={`mailto:${email}`} className={styles.link} children={email} />
+        </div>
+        <div className={styles.containerLink}>
+          <IconPhone /> 
+          <Link
+            to={`tel:+${telephone}`}
+            className={styles.link}
+            children={telephone}
+          />
+        </div>
       </div>
       <div className={styles.localInfo}>
         <Htag tag="h2" children="We are waiting for your visit" />
-        <Link
-          to='#'
-          target="_blank"
-          className={styles.link}
-          children={addressOne}
-        />
-        <Link
-          to='#'
-          target="_blank"
-          className={styles.link}
-          children={addressTwo}
-        />
+        <div className={styles.containerLink}>
+          <IconPoint />
+          <Link
+            to="#"
+            target="_blank"
+            className={styles.link}
+            children={addressOne}
+          />
+        </div>
+        <div className={styles.containerLink}>
+          <IconPoint/>
+          <Link
+            to="#"
+            target="_blank"
+            className={styles.link}
+            children={addressTwo}
+          />
+        </div>
       </div>
     </>
   );
