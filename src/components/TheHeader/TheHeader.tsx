@@ -4,10 +4,10 @@ import { NavBar } from "../NavBar";
 
 export const TheHeader = () => {
   return <>
-  <div className={styles.header}>
+  <header className={styles.header}>
       <TheLogo logo="Cozy  House" someTextBelow="Shelter for pets in Boston" />
       <NavBar />
-    </div>
+    </header>
   </>
   
 };

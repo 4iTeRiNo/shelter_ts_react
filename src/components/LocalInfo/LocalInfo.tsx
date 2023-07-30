@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Htag } from "../Htag";
+import { HeaderTag } from "../HeaderTag";
 import styles from "./LocalInfo.module.scss";
 import { ReactComponent as IconEmail } from "../../assets/svg/icon-email.svg";
 import { ReactComponent as IconPhone } from "../../assets/svg/phone.svg";
@@ -17,7 +17,7 @@ export const LocalInfo = ({
   return (
     <>
       <div className={styles.localInfo}>
-        <Htag tag="h2" children="For questions and suggestions" />
+        <HeaderTag tagName="h2" children="For questions and suggestions" />
         <div className={styles.containerLink}>
           <IconEmail />
           <Link to={`mailto:${email}`} className={styles.link} children={email} />
@@ -32,7 +32,7 @@ export const LocalInfo = ({
         </div>
       </div>
       <div className={styles.localInfo}>
-        <Htag tag="h2" children="We are waiting for your visit" />
+        <HeaderTag tagName="h2" children="We are waiting for your visit" />
         <div className={styles.containerLink}>
           <IconPoint />
           <Link

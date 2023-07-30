@@ -5,7 +5,7 @@ interface ContentProps  {
 }
 
 export const Content = ({children }: ContentProps) => (
-  <div className={styles.content}>
+  <section className={styles.content}>
     {children}
-  </div>
+  </section>
 );

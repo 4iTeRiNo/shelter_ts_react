@@ -1,0 +1,32 @@
+.about {
+  display: grid;
+  grid-template-columns: minmax(310px, 460px) minmax(50%, auto);
+  margin-top: 5.625rem;
+  column-gap: 42px;
+}
+.wrapper {
+//   margin-top: 163px;
+}
+
+.aboutParagraph {
+  font-size: 35px;
+}
+.svgContainer {
+  display: flex;
+  max-width: 100%;
+  justify-content: start;
+  align-items: start;
+  .logo {
+    max-width: 100%;
+  }
+}
+
+.h2 {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5.188rem;
+  line-height: 130%;
+  color: #ffff;
+  letter-spacing: 0.06em;
+}
