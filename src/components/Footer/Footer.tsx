@@ -8,20 +8,22 @@ interface FooterProps extends localInfo {}
 
 export const Footer = (props: FooterProps) => {
   return (
-    <Content>
-      <div className={styles.footer}>
-        <div className={styles.wrapperLink}>
-          <LocalInfo
-            addressOne={props.addressOne}
-            addressTwo={props.addressTwo}
-            email={props.email}
-            telephone={props.telephone}
-          />
+    <footer>
+      <Content>
+        <div className={styles.footer}>
+          <div className={styles.wrapperLink}>
+            <LocalInfo
+              addressOne={props.addressOne}
+              addressTwo={props.addressTwo}
+              email={props.email}
+              telephone={props.telephone}
+            />
+          </div>
+          <div className={styles.wrapperLogo}>
+            <img src={LogoFooter} alt={LogoFooter} className={styles.logo} />
+          </div>
         </div>
-        <div className={styles.wrapperLogo}>
-          <img src={LogoFooter} alt={LogoFooter} className={styles.logo} />
-        </div>
-      </div>
-    </Content>
+      </Content>
+    </footer>
   );
 };

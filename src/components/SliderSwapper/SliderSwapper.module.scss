@@ -1,0 +1,14 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.container{ 
+    display: flex;
+    flex-direction: row;
+    column-gap: 90px;
+    
+}

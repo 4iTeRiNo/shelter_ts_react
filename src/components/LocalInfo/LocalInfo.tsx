@@ -17,7 +17,7 @@ export const LocalInfo = ({
   return (
     <>
       <div className={styles.localInfo}>
-        <HeaderTag tagName="h2" children="For questions and suggestions" />
+        <HeaderTag tagName="h3" children="For questions and suggestions" />
         <div className={styles.containerLink}>
           <IconEmail />
           <Link to={`mailto:${email}`} className={styles.link} children={email} />
@@ -32,7 +32,7 @@ export const LocalInfo = ({
         </div>
       </div>
       <div className={styles.localInfo}>
-        <HeaderTag tagName="h2" children="We are waiting for your visit" />
+        <HeaderTag tagName="h3" children="We are waiting for your visit" />
         <div className={styles.containerLink}>
           <IconPoint />
           <Link

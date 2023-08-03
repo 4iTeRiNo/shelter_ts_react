@@ -6,11 +6,12 @@ import { TheStartScreen } from "./components/TheStartScreen";
 import { localInfo } from "./types";
 import { InfoComponyDefault } from "./mock";
 import { About } from "./components/About";
+import { Slider } from "./components/Slider";
+import { HelpSection } from "./components/HelpSection";
+import { Donation } from "./components/Donation";
 
 function App() {
   const [local, setLocal] = useState<localInfo>(InfoComponyDefault);
-
-  console.log(local);
 
   useEffect(() => {
     setLocal(local);
@@ -20,6 +21,9 @@ function App() {
       <TheHeader />
       <TheStartScreen />
       <About />
+      <Slider img="" name=""/>
+      <HelpSection/>
+      <Donation/>
       <Footer {...local} />
     </Container>
   );

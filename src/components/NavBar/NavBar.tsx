@@ -14,10 +14,10 @@ export const NavBar = () => {
   return (
     <nav className={styles.navBar}>
       <ul className={styles.container}>
-        <NavLinks children="About the shelter"/>
-        <NavLinks children="Our pets"/>
-        <NavLinks children="Help the shelter"/>
-        <NavLinks children="Contact"/>
+        <NavLinks to='/' children="About the shelter"/>
+        <NavLinks to='/about' children="Our pets"/>
+        <NavLinks to='/' children="Help the shelter"/>
+        <NavLinks to='/footer' children="Contact"/>
       </ul>
     </nav>
   );

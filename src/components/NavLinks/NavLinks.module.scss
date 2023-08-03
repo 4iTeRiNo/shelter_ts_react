@@ -15,10 +15,10 @@
   &:hover {
     color: var(--color-links-hover);
   }
-}
-.active {
-  pointer-events: none;
-  color: var(--color-links-hover);
-  border-bottom: 0.188rem solid var(--color-primary);
-  transition: border-bottom ease-out 0.14s;
+  &:active {
+    pointer-events: none;
+    color: var(--color-links-hover);
+    border-bottom: 0.188rem solid var(--color-primary);
+    transition: border-bottom ease-out 0.14s;
+  }
 }
