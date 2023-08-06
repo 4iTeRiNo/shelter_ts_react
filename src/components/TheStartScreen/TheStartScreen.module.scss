@@ -6,6 +6,9 @@
 }
 .wrapper {
   margin-top: 163px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 42px;
 }
 
 .svgContainer {

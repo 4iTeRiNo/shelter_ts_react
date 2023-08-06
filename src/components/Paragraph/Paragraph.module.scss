@@ -1,10 +1,29 @@
-.paragraph {
-  display: grid;
+.general {
   font-family: "Arial";
   font-style: normal;
   font-weight: 400;
-  font-size: 0.938rem;
+  // margin-top: 42px;
+}
+
+.white {
+  color: var(--text-grey-l);
+}
+
+.dark {
+  color: var(--text-grey-m);
+}
+
+.grey {
+  color: var(--grey);
+}
+
+.meddle {
+  font-style: normal;
+  font-size: 15px;
   line-height: 160%;
-  margin-top: 42px;
-  color: var(--text-welcome);
+}
+.small {
+  font-size: 12px;
+  font-style: italic;
+  line-height: 150%;
 }

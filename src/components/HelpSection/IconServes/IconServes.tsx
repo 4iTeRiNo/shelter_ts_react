@@ -1,12 +1,12 @@
-import { ReactComponent as IconFood } from "../../assets/help/icon-food.svg";
-import { ReactComponent as IconTransportation } from "../../assets/help/icon-transportation.svg";
-import { ReactComponent as IconToys } from "../../assets/help/icon-toys.svg";
-import { ReactComponent as IconBlows } from "../../assets/help/icon-cups.svg";
-import { ReactComponent as IconVitamins } from "../../assets/help/icon-vitamins.svg";
-import { ReactComponent as IconShampoos } from "../../assets/help/icon-shampoos.svg";
-import { ReactComponent as IconMedicines } from "../../assets/help/icon-medicines.svg";
-import { ReactComponent as IconCollar } from "../../assets/help/icon-leashes.svg";
-import { ReactComponent as IconAreas } from "../../assets/help/icon-sleeping-area.svg";
+import { ReactComponent as IconFood } from "../../../assets/help/icon-food.svg";
+import { ReactComponent as IconTransportation } from "../../../assets/help/icon-transportation.svg";
+import { ReactComponent as IconToys } from "../../../assets/help/icon-toys.svg";
+import { ReactComponent as IconBlows } from "../../../assets/help/icon-cups.svg";
+import { ReactComponent as IconVitamins } from "../../../assets/help/icon-vitamins.svg";
+import { ReactComponent as IconShampoos } from "../../../assets/help/icon-shampoos.svg";
+import { ReactComponent as IconMedicines } from "../../../assets/help/icon-medicines.svg";
+import { ReactComponent as IconCollar } from "../../../assets/help/icon-leashes.svg";
+import { ReactComponent as IconAreas } from "../../../assets/help/icon-sleeping-area.svg";
 import styles from "./IconServes.module.scss";
 
 // interface IconServesProps extends icon {}

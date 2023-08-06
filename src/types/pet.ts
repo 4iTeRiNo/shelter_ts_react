@@ -1,5 +1,5 @@
-export type pets = {
-  // id: number;
+export type pet = {
+  id: number;
   name: string;
   img: string;
   imgBig: string;

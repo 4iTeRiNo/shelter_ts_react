@@ -6,7 +6,9 @@
   column-gap: 120px;
 }
 .wrapper {
-  //   margin-top: 163px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
 }
 
 .svgContainer {

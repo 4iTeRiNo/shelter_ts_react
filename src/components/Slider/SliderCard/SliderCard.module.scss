@@ -1,3 +1,5 @@
+.sliderCard {
+}
 .button {
   font-family: "Georgia";
   font-style: normal;
@@ -13,9 +15,11 @@
   letter-spacing: 0.06em;
   cursor: pointer;
   width: fit-content;
+  transition: background ease 0.2s;
+  background: var(--color-primary);
 
   &:hover {
+    border: 2px solid var(--color-buttons-hover);
     background-color: var(--color-buttons-hover);
-    transition: background ease-in 0.3s;
   }
 }

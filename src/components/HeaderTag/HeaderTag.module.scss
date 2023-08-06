@@ -2,18 +2,23 @@
   font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
-  font-size: 2.75rem;
   line-height: 130%;
-  color: #fff;
 }
 
-.general__h2 {
+.small {
+  font-size: 35px;
   letter-spacing: 2.1px;
+}
+
+.meddle {
   font-size: 44px;
   line-height: 130%;
 }
-.general__h3 {
+
+.dark {
   color: var(--color-heading);
-  font-size: 35px;
-  letter-spacing: 2.1px;
+}
+
+.white {
+  color: #fff;
 }

@@ -1,2 +1,2 @@
 export * from "./localInfo"
-export * from "./pets"
+export * from "./pet"

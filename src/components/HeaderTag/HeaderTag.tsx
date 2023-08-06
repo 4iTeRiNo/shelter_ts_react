@@ -1,22 +1,42 @@
 import styles from "./HeaderTag.module.scss";
-import { createElement } from "react";
+import {
+  DetailedHTMLProps,
+  HTMLAttributes,
+  ReactNode,
+  createElement,
+} from "react";
 import cn from "classnames";
 
-interface HeaderTagProps {
+interface HeaderTagProps
+  extends DetailedHTMLProps<
+    HTMLAttributes<HTMLParagraphElement>,
+    HTMLParagraphElement
+  > {
   tagName: keyof JSX.IntrinsicElements;
-  children: string;
+  children: ReactNode;
+  color: "white" | "dark";
+  size: "small" | "meddle";
+  href?: string;
 }
 
-export const HeaderTag = ({ tagName, children }: HeaderTagProps) => {
+export const HeaderTag = ({
+  tagName,
+  color = "dark",
+  size = "meddle",
+  href,
+  children,
+  className,
+}: HeaderTagProps) => {
   return createElement(
     tagName,
     {
-      className: cn(styles.general, {
-        [styles.general__h1]: tagName === "h1",
-        [styles.general__h2]: tagName === "h2",
-        [styles.general__h3]: tagName === "h3",
+      className: cn(styles.general, className, {
+        [styles.white]: color === "white",
+        [styles.dark]: color === "dark",
+        [styles.small]: size === "small",
+        [styles.meddle]: size === "meddle",
       }),
     },
-    children
+    href ? <a href={href}>{children}</a> : <>{children}</>
   );
 };

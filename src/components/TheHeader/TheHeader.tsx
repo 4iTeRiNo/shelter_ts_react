@@ -1,6 +1,6 @@
 import styles from "./TheHeader.module.scss";
-import { TheLogo } from "../TheLogo";
-import { NavBar } from "../NavBar";
+import { TheLogo } from "./TheLogo";
+import { NavBar } from "./NavBar";
 
 export const TheHeader = () => {
   return <>

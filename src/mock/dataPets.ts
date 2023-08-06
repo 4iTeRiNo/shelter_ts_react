@@ -1,7 +1,8 @@
-import { pets } from "../types";
+import { pet } from "../types";
 
-export const pet: pets[] = [
+export const pets: pet[] = [
   {
+    id: 1,
     name: "Jennifer",
     img: "../../assets/jennifer.png",
     imgBig: "../../assets/500x500/jennifer.png",
@@ -15,6 +16,7 @@ export const pet: pets[] = [
     parasites: ["none"],
   },
   {
+    id: 2,
     name: "Sophia",
     img: "../../assets/sophia.png",
     imgBig: "../../assets/500x500/sophia.png",
@@ -28,6 +30,7 @@ export const pet: pets[] = [
     parasites: ["none"],
   },
   {
+    id: 3,
     name: "Woody",
     img: "../../assets/woody.png",
     imgBig: "../../assets/500x500/woody.png",
@@ -41,6 +44,7 @@ export const pet: pets[] = [
     parasites: ["none"],
   },
   {
+    id: 4,
     name: "Scarlett",
     img: "../../assets/pets/scarlett.png",
     imgBig: "../../assets/pets/500x500/scarlett.png",
@@ -54,6 +58,7 @@ export const pet: pets[] = [
     parasites: ["none"],
   },
   {
+    id: 5,
     name: "Katrine",
     img: "../../assets/pets/katrine.png",
     imgBig: "../../assets/pets/500x500/katrine.png",
@@ -67,6 +72,7 @@ export const pet: pets[] = [
     parasites: ["none"],
   },
   {
+    id: 6,
     name: "Timmy",
     img: "../../assets/pets/timmy.png",
     imgBig: "../../assets/pets/500x500/timmy.png",
@@ -80,6 +86,7 @@ export const pet: pets[] = [
     parasites: ["none"],
   },
   {
+    id: 7,
     name: "Freddie",
     img: "../../assets/pets/freddie.png",
     imgBig: "../../assets/pets/500x500/freddie.png",
@@ -93,6 +100,7 @@ export const pet: pets[] = [
     parasites: ["none"],
   },
   {
+    id: 8,
     name: "Charly",
     img: "../../assets/pets/charly.png",
     imgBig: "../../assets/pets/500x500/charly.png",

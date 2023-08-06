@@ -1,7 +1,7 @@
 import { Content } from "../Content";
 import styles from "./Footer.module.scss";
 import { localInfo } from "../../types";
-import { LocalInfo } from "../LocalInfo";
+import { LocalInfo } from "./LocalInfo";
 import LogoFooter from "../../assets/footer/footer-puppy.png";
 
 interface FooterProps extends localInfo {}

@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import { HeaderTag } from "../HeaderTag";
+import { HeaderTag } from "../../HeaderTag";
 import styles from "./LocalInfo.module.scss";
-import { ReactComponent as IconEmail } from "../../assets/svg/icon-email.svg";
-import { ReactComponent as IconPhone } from "../../assets/svg/phone.svg";
-import { ReactComponent as IconPoint } from "../../assets/svg/icon-marker.svg";
-import { localInfo } from "../../types";
+import { ReactComponent as IconEmail } from "../../../assets/svg/icon-email.svg";
+import { ReactComponent as IconPhone } from "../../../assets/svg/phone.svg";
+import { ReactComponent as IconPoint } from "../../../assets/svg/icon-marker.svg";
+import { localInfo } from "../../../types";
 
 interface LocalInfoProps extends localInfo {}
 
@@ -17,13 +17,22 @@ export const LocalInfo = ({
   return (
     <>
       <div className={styles.localInfo}>
-        <HeaderTag tagName="h3" children="For questions and suggestions" />
+        <HeaderTag
+          color="white"
+          size="small"
+          tagName="h3"
+          children="For questions and suggestions"
+        />
         <div className={styles.containerLink}>
           <IconEmail />
-          <Link to={`mailto:${email}`} className={styles.link} children={email} />
+          <Link
+            to={`mailto:${email}`}
+            className={styles.link}
+            children={email}
+          />
         </div>
         <div className={styles.containerLink}>
-          <IconPhone /> 
+          <IconPhone />
           <Link
             to={`tel:+${telephone}`}
             className={styles.link}
@@ -32,7 +41,12 @@ export const LocalInfo = ({
         </div>
       </div>
       <div className={styles.localInfo}>
-        <HeaderTag tagName="h3" children="We are waiting for your visit" />
+        <HeaderTag
+          color="white"
+          size="small"
+          tagName="h3"
+          children="We are waiting for your visit"
+        />
         <div className={styles.containerLink}>
           <IconPoint />
           <Link
@@ -43,7 +57,7 @@ export const LocalInfo = ({
           />
         </div>
         <div className={styles.containerLink}>
-          <IconPoint/>
+          <IconPoint />
           <Link
             to="#"
             target="_blank"

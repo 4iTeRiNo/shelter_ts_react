@@ -11,8 +11,13 @@ export const TheStartScreen = () => {
       <Content>
         <div className={styles.welcome}>
           <div className={styles.wrapper}>
-            <HeaderTag tagName="h2" children="Not only people need a house" />
-            <Paragraph
+            <HeaderTag
+              color="white"
+              size="meddle"
+              tagName="h2"
+              children="Not only people need a house"
+            />
+            <Paragraph color="white" size="meddle"
               text={
                 "We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!"
               }
