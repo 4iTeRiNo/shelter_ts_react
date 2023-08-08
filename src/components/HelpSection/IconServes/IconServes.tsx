@@ -14,51 +14,51 @@ import styles from "./IconServes.module.scss";
 export const IconServes = () => {
   const icon = [
     {
-      name:"Pet food",
+      name: "Pet food",
       icon: <IconFood />,
     },
     {
-      name:"Transportation",
-      icon:<IconTransportation />,
+      name: "Transportation",
+      icon: <IconTransportation />,
     },
     {
-      name:"Toys",
+      name: "Toys",
       icon: <IconToys />,
     },
     {
-      name:"Blowls and Cups",
-      icon:<IconBlows />,
+      name: "Blowls and Cups",
+      icon: <IconBlows />,
     },
     {
-      name:"Shampoos",
-      icon:<IconShampoos />,
+      name: "Shampoos",
+      icon: <IconShampoos />,
     },
     {
-      name:"Vitamins",
-      icon:<IconVitamins />,
+      name: "Vitamins",
+      icon: <IconVitamins />,
     },
     {
-      name:"Medicines",
-      icon:<IconMedicines />,
+      name: "Medicines",
+      icon: <IconMedicines />,
     },
     {
-      name:"Collar/leashes",
-      icon:<IconCollar />,
+      name: "Collar/leashes",
+      icon: <IconCollar />,
     },
     {
-      name:"Sleeping areas",
-      icon:<IconAreas />,
+      name: "Sleeping areas",
+      icon: <IconAreas />,
     },
   ];
 
-  return <div className={styles.container}>
-    {icon.map((item, index) => (
-    <div key={index} className={styles.icon}>
-      {item.icon}
-      <p>{item.name}</p>
+  return (
+    <div className={styles.container}>
+      {icon.map((item, index) => (
+        <div key={index} className={styles.icon}>
+          {item.icon}
+          <p>{item.name}</p>
+        </div>
+      ))};
     </div>
-    
-    )
-      
-      )}  </div>;
+  );
 };

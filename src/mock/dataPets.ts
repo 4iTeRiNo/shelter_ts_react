@@ -1,10 +1,19 @@
 import { pet } from "../types";
 
+import ImgJennifer from "../assets/pets/jennifer.png";
+import ImgKatrine from "../assets/pets/katrine.png";
+import ImgWoody from "../assets/pets/woody.png";
+import ImgSophia from "../assets/pets/sophia.png";
+import ImgTimmy from "../assets/pets/timmy.png";
+import ImgCharlie from "../assets/pets/charlie.png";
+import ImgScarlet from "../assets/pets/scarlet.png";
+import ImgFreddie from "../assets/pets/freddie.png";
+
 export const pets: pet[] = [
   {
     id: 1,
     name: "Jennifer",
-    img: "../../assets/jennifer.png",
+    img: ImgJennifer,
     imgBig: "../../assets/500x500/jennifer.png",
     type: "Dog",
     breed: "Labrador",
@@ -18,7 +27,7 @@ export const pets: pet[] = [
   {
     id: 2,
     name: "Sophia",
-    img: "../../assets/sophia.png",
+    img: ImgSophia,
     imgBig: "../../assets/500x500/sophia.png",
     type: "Dog",
     breed: "Shihtzu",
@@ -32,7 +41,7 @@ export const pets: pet[] = [
   {
     id: 3,
     name: "Woody",
-    img: "../../assets/woody.png",
+    img: ImgWoody,
     imgBig: "../../assets/500x500/woody.png",
     type: "Dog",
     breed: "Golden Retriever",
@@ -46,7 +55,7 @@ export const pets: pet[] = [
   {
     id: 4,
     name: "Scarlett",
-    img: "../../assets/pets/scarlett.png",
+    img: ImgScarlet,
     imgBig: "../../assets/pets/500x500/scarlett.png",
     type: "Dog",
     breed: "Jack Russell Terrier",
@@ -60,7 +69,7 @@ export const pets: pet[] = [
   {
     id: 5,
     name: "Katrine",
-    img: "../../assets/pets/katrine.png",
+    img: ImgKatrine,
     imgBig: "../../assets/pets/500x500/katrine.png",
     type: "Cat",
     breed: "British Shorthair",
@@ -74,7 +83,7 @@ export const pets: pet[] = [
   {
     id: 6,
     name: "Timmy",
-    img: "../../assets/pets/timmy.png",
+    img: ImgTimmy,
     imgBig: "../../assets/pets/500x500/timmy.png",
     type: "Cat",
     breed: "British Shorthair",
@@ -88,7 +97,7 @@ export const pets: pet[] = [
   {
     id: 7,
     name: "Freddie",
-    img: "../../assets/pets/freddie.png",
+    img: ImgFreddie,
     imgBig: "../../assets/pets/500x500/freddie.png",
     type: "Cat",
     breed: "British Shorthair",
@@ -102,7 +111,7 @@ export const pets: pet[] = [
   {
     id: 8,
     name: "Charly",
-    img: "../../assets/pets/charly.png",
+    img: ImgCharlie,
     imgBig: "../../assets/pets/500x500/charly.png",
     type: "Dog",
     breed: "Jack Russell Terrier",
@@ -112,5 +121,19 @@ export const pets: pet[] = [
     inoculations: ["bordetella bronchiseptica", "leptospirosis"],
     diseases: ["deafness", "blindness"],
     parasites: ["lice", "fleas"],
+  },
+  {
+    id: 9,
+    name: "Timmy",
+    img: ImgTimmy,
+    imgBig: "../../assets/pets/500x500/timmy.png",
+    type: "Cat",
+    breed: "British Shorthair",
+    description:
+      "Timmy is an adorable grey british shorthair male. He loves to play and snuggle. He is neutered and up to date on age appropriate vaccinations. He can be chatty and enjoys being held. Timmy has a lot to say and wants a person to share his thoughts with.",
+    age: "2 years 3 months",
+    inoculations: ["calicivirus", "viral rhinotracheitis"],
+    diseases: ["kidney stones"],
+    parasites: ["none"],
   },
 ];

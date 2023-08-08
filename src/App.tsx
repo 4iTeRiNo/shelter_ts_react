@@ -10,12 +10,11 @@ import { Slider } from "./components/Slider";
 import { HelpSection } from "./components/HelpSection/IconServes";
 import { Donation } from "./components/Donation";
 import { pets } from "./mock/dataPets";
+import { SliderCard } from "./components/Slider/SliderCard";
 
 function App() {
   const [local, setLocal] = useState<localInfo>(InfoComponyDefault);
   const [pet, setPets] = useState(pets);
-
-
 
   // const petCard = pet.map((person, personIndex) => {
   //   const { id, img, name } = person;
@@ -40,7 +39,12 @@ function App() {
       <TheHeader />
       <TheStartScreen />
       <About />
-      {/* <Slider  /> */}
+      <Slider
+        slides={pets.map((pet) => ({
+          img: pet.img,
+          name: pet.name,
+        }))}
+      />
       <HelpSection />
       <Donation />
       <Footer {...local} />

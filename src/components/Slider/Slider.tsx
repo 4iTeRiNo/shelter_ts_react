@@ -3,47 +3,95 @@ import { Content } from "../Content";
 import { HeaderTag } from "../HeaderTag";
 import styles from "./Slider.module.scss";
 import { SliderCard, SliderCardProps } from "./SliderCard";
-import ImgJennifer from "../../../assets/pets/jennifer.png";
-import ImgKatrine from "../../../assets/pets/katrine.png";
-import ImgWoody from "../../../assets/pets/woody.png";
-import ImgSophia from "../../../assets/pets/sophia.png";
-import ImgTimmy from "../../../assets/pets/timmy.png";
-import ImgCharlie from "../../../assets/pets/charly.png";
-import ImgScarlet from "../../../assets/pets/scarlet.png";
-import ImgFreddie from "../../../assets/pets/freddie.png";
 import { useState } from "react";
 import { pets } from "../../mock/dataPets";
+import { log } from "console";
+import { pet } from "../../types";
 
-
-interface SliderProps extends SliderCardProps {}
+interface SliderProps {
+  slides: Array<SliderCardProps>;
+}
 
 export const Slider = (props: SliderProps) => {
-  // const [item, setItem] = useState([])
-  // const [slide, setSlide] = useState(0)
-  const [currentIndex, setCurrentIndex] = useState(0);
+  // const [item, setItem] = useState([]);
+  const [offset, setOffset] = useState(0);
+  // const [currentIndex, setCurrentIndex] = useState(0);
 
+  const COUNT_CARD = 3;
 
+  function createCardGroup(arr: pet[]) {
+    const result = [];
+    for (
+      let i = 0, count = COUNT_CARD;
+      i < arr.length;
+      i += COUNT_CARD, count += COUNT_CARD
+    ) {
+      result.push(arr.slice(i, count));
+    }
+
+    return result.map((item, i) => {
+      return (
+        <ul
+          className={styles.cardContainer}
+          key={i}
+          // style={{ order: `${i + 1}` }}
+        >
+          {item.map((slide, index) => {
+            return <SliderCard key={index} {...slide} />;
+          })}
+        </ul>
+      );
+    });
+  }
+
+  // useState(currentIndex) => {
+  // }
+
+  const nextSlide = () => {
+    setOffset((currentOffset) => {
+      let newOffset = currentOffset - 100;
+      if (currentOffset === newOffset - currentOffset)
+        return (newOffset = currentOffset + 200);
+      return newOffset;
+    });
+  };
+  const prevSlide = () => {
+    setOffset((currentOffset) => {
+      let newOffset = currentOffset + 100;
+      if (currentOffset === newOffset - currentOffset)
+      return (newOffset = currentOffset - 200);
+      // console.log(currentOffset);
+      
+      return newOffset;
+    });
+  };
   // const changeSlide = (direction = 1) => {
   //   let slideNumber = 0;
 
-  //   if(slide + direction < 0) {
-  //     slideNumber = item.length - 1
+  //   if (slide + direction < 0) {
+  //     slideNumber = item.length - 1;
+  //     console.log('aa');
+
   //   } else {
-  //     slideNumber = (slide + direction) % item.length
+  //     slideNumber = (slide + direction) % item.length;
+  //     console.log('bb');
   //   }
-  //   setSlide(slideNumber)
-  // }
+  //   setSlide(slideNumber);
+  // };
 
-  // const goToSlide = (number) => {
-  //   setSlide(number % item.length)
-  // }
+  // const goToSlide = (number: number) => {
+  //   setSlide(number % item.length);
+  // };
 
-  const prevSlide = () =>
-  setCurrentIndex(currentIndex === 0 ? pets.length - 1 : currentIndex - 1);
-
- const nextSlide = () =>
-  setCurrentIndex(currentIndex === 0 ? pets.length - 1 : currentIndex + 1);
-
+  // type SliderHook = (
+  //   lenght: number,
+  //   step?: number,
+  //   isInfinite?: boolean
+  // ) => {
+  //   callback: (direction: "next" | "prev") => void;
+  //   next: boolean;
+  //   prev: boolean;
+  // };
 
   return (
     <section className={styles.background}>
@@ -56,33 +104,26 @@ export const Slider = (props: SliderProps) => {
             children="Our friends who
           are looking for a house"
           />
-          <Content>
-            {
-              <div className={styles.wrapperCard}>
-                <div className={styles.container}>
-                  <SliderCard img={ImgCharlie} name={props.name} />
-                  <SliderCard img={ImgFreddie} name={props.name} />
-                  <SliderCard img={ImgJennifer} name={props.name} />
-                </div>
-                <div className={styles.container}>
-                  <SliderCard img={ImgKatrine} name={props.name} />
-                  <SliderCard img={ImgScarlet} name={props.name} />
-                  <SliderCard img={ImgSophia} name={props.name} />
-                </div>
-                <div className={styles.container}>
-                  <SliderCard img={ImgWoody} name={props.name} />
-                  <SliderCard img={ImgTimmy} name={props.name} />
-                  <SliderCard img={ImgKatrine} name={props.name} />
-                </div>
+          {
+            <div className={styles.wrapperCard}>
+              <div className={styles.arrow}>
+                <button className={styles.left} onClick={prevSlide}></button>
               </div>
-            }
-            <div className={styles.arrow}>
-              <button className={styles.left} onClick={prevSlide}></button>
+              <div className={styles.window}>
+                <ul
+                  className={styles.allCard}
+                  style={{
+                    transform: `translateX(${offset}%)`,
+                  }}
+                >
+                  {createCardGroup(pets)}
+                </ul>
+              </div>
+              <div className={styles.arrow}>
+                <button className={styles.right} onClick={nextSlide}></button>
+              </div>
             </div>
-            <div className={styles.arrow}>
-              <button className={styles.right} onClick={nextSlide}></button>
-            </div>
-          </Content>
+          }
           <Button children="Get to know the rest" />
         </Content>
       </div>

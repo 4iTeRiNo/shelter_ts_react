@@ -1,4 +1,8 @@
 .slider {
+  .content {
+    display: flex;
+    flex-direction: row;
+  }
 }
 .background {
   background-color: var(--background-color-light-s);
@@ -10,107 +14,133 @@
   align-items: center;
   text-align: center;
 }
-
 .wrapperCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardContainer {
   display: flex;
   flex-direction: row;
   align-items: center;
   text-align: center;
   justify-content: space-around;
-  
+  padding: 71px 0 49px 0;
+  column-gap: 90px;
 }
 
-.container{ 
+.window {
   display: flex;
   flex-direction: row;
-  column-gap: 90px;
-  overflow: hidden;
+  justify-content: space-around;
+  column-gap: 100px;
   width: 100%;
+  overflow: hidden;
+}
+.allCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  column-gap: 100px;
+  width: 100%;
+
+transition: transform 1s ease-in-out;
+  // transition: translate ;
+  // transition-property:transform ;
+  // transition-duration: 3s ;
+  // transition-timing-function:ease-in-out;
+}
+
+.arrow {
+  width: 52px;
+  height: 52px;
+  margin: auto 0;
+  transition: all ease-in-out 0.35s;
 }
 
 .left {
-cursor: pointer;
-display: block;
-width: 48px;
-height: 48px;
-background-color: #fff;
-border: 2px solid var(--color-primary);
-border-radius: 50%;
-position: relative;
-transition: background ease 0.2s;
+  cursor: pointer;
+  display: block;
+  width: 48px;
+  height: 48px;
+  background-color: #fff;
+  border: 2px solid var(--color-primary);
+  border-radius: 50%;
+  position: relative;
+  transition: background ease 0.2s;
 
-&:hover {
-  background: var(--color-buttons-hover);
-  // border: 2px solid $color-buttons-hover;
-  transition: background ease-in-out 0.1s;
-}
-.arrow-left,
-.arrow-left::before,
-.arrow-left::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  margin-top: -1px;
-  left: 50%;
-  margin-left: -7px;
-  width: 15px;
-  height: 2px;
-  transform-origin: 0 50%;
-  background-color: var(--color-buttons);
-
-}
-.arrow-left::after {
-  transform: rotate(-35deg);
-  width: 5px;
-  transform-origin: left bottom;
-}
-.arrow-left::before {
-  transform: rotate(35deg);
-  width: 5px;
-  transform-origin: left top;
-}
+  &:hover {
+    background: var(--color-buttons-hover);
+    border: 2px solid var(--color-buttons-hover);
+    transition: background ease-in-out 0.1s;
+  }
+  .left,
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    left: 50%;
+    margin-left: -7px;
+    width: 15px;
+    height: 2px;
+    transform-origin: 0 50%;
+    background-color: var(--color-buttons);
+  }
+  &::after {
+    transform: rotate(-35deg);
+    width: 5px;
+    transform-origin: left bottom;
+  }
+  &::before {
+    transform: rotate(35deg);
+    width: 5px;
+    transform-origin: left top;
+  }
 }
 .right {
-cursor: pointer;
-display: block;
-width: 48px;
-height: 48px;
-background-color: #fff;
-border: 2px solid var(--color-primary);
-border-radius: 50%;
-position: relative;
-transform: rotate(180deg);
-transition: background ease 0.2s;
+  cursor: pointer;
+  display: block;
+  width: 48px;
+  height: 48px;
+  background-color: #fff;
+  border: 2px solid var(--color-primary);
+  border-radius: 50%;
+  position: relative;
+  transform: rotate(180deg);
+  transition: background ease 0.2s;
 
-&:hover {
-  background: var(--color-buttons-hover);
-  // border: 2px solid $color-buttons-hover;
-  transition: background ease-in-out 0.1s;
-}
-.arrow-right ,
-.arrow-right::before,
-.arrow-right::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  margin-top: -1px;
-  left: 50%;
-  margin-left: -7px;
-  width: 15px;
-  height: 2px;
-  transform-origin: 0 50%;
-  background-color: var(--color-buttons);
-
-}
-.arrow-right::after {
-  transform: rotate(-35deg);
-  width: 5px;
-  transform-origin: left bottom;
-}
-.arrow-right::before {
-  transform: rotate(35deg);
-  width: 5px;
-  transform-origin: left top;
-}
+  &:hover {
+    background: var(--color-buttons-hover);
+    border: 2px solid var(--color-buttons-hover);
+    transition: background ease-in-out 0.1s;
+  }
+  .right,
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    left: 50%;
+    margin-left: -7px;
+    width: 15px;
+    height: 2px;
+    transform-origin: 0 50%;
+    background-color: var(--color-buttons);
+  }
+  &::after {
+    transform: rotate(-35deg);
+    width: 5px;
+    transform-origin: left bottom;
+  }
+  &::before {
+    transform: rotate(35deg);
+    width: 5px;
+    transform-origin: left top;
+  }
 }
 
