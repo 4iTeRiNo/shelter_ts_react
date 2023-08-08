@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7912baf4.css",
+    "main.js": "/static/js/main.b4f6dfa8.js",
+    "static/media/welcome__puppy.png": "/static/media/welcome__puppy.b1be486973892fcb7e85.png",
+    "static/media/about-pets.png": "/static/media/about-pets.4e754a22757cdd9186e9.png",
+    "static/media/donation-dog.png": "/static/media/donation-dog.50d0cad5be1d0d87b825.png",
+    "static/media/background-.png": "/static/media/background-.8314cbbc235d786cb99b.png",
+    "static/media/footer-puppy.png": "/static/media/footer-puppy.ee72d148fede821a1c39.png",
+    "static/media/charlie.png": "/static/media/charlie.ced4e399a51c4183f125.png",
+    "static/media/sophia.png": "/static/media/sophia.2344312ca42955d229ea.png",
+    "static/media/woody.png": "/static/media/woody.9926a26c4cb1dd4bf18c.png",
+    "static/media/jennifer.png": "/static/media/jennifer.e36eb69780f9ced90752.png",
+    "static/media/timmy.png": "/static/media/timmy.f28b802b95a1fcf49f0d.png",
+    "static/media/freddie.png": "/static/media/freddie.fadecb22388434dc910b.png",
+    "static/media/scarlet.png": "/static/media/scarlet.642d228764da438f2cef.png",
+    "static/media/katrine.png": "/static/media/katrine.e335f0c8ca41ae153d1d.png",
+    "static/media/icon-transportation.svg": "/static/media/icon-transportation.804c2a69d91073746905d234c0e6ccdb.svg",
+    "static/media/icon-leashes.svg": "/static/media/icon-leashes.0f376f19183bd46a47b10f52e4d332f6.svg",
+    "static/media/icon-sleeping-area.svg": "/static/media/icon-sleeping-area.407d1c0b5124940a11b10ec999f740f9.svg",
+    "static/media/phone.svg": "/static/media/phone.293edf386aabd1d4817c7adaeb625833.svg",
+    "static/media/icon-medicines.svg": "/static/media/icon-medicines.42a894b85d842dc1e2b57f841e36d26c.svg",
+    "static/media/icon-vitamins.svg": "/static/media/icon-vitamins.7b3dba565c55559b1d108101a0962851.svg",
+    "static/media/icon-food.svg": "/static/media/icon-food.a14820c2cfa31fe396bf7b5603ab2fe9.svg",
+    "static/media/icon-email.svg": "/static/media/icon-email.ed33c30e94f6a2b4e039acbcb5326132.svg",
+    "static/media/icon-cups.svg": "/static/media/icon-cups.9697e90ab8aa7af6087c9e46c8a03358.svg",
+    "static/media/icon-toys.svg": "/static/media/icon-toys.de0da61f230c46feb2f6b8c50c6e7269.svg",
+    "static/media/icon-shampoos.svg": "/static/media/icon-shampoos.9e8589d176f27a8865f7488c2d90ee25.svg",
+    "static/media/icon-marker.svg": "/static/media/icon-marker.40f188612ed0886f77077fd5162d1fef.svg",
+    "index.html": "/index.html",
+    "main.7912baf4.css.map": "/static/css/main.7912baf4.css.map",
+    "main.b4f6dfa8.js.map": "/static/js/main.b4f6dfa8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7912baf4.css",
+    "static/js/main.b4f6dfa8.js"
+  ]
+}
