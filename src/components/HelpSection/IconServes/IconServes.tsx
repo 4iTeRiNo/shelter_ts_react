@@ -26,7 +26,7 @@ export const IconServes = () => {
       icon: <IconToys />,
     },
     {
-      name: "Blowls and Cups",
+      name: "Bowls and Cups",
       icon: <IconBlows />,
     },
     {
@@ -58,7 +58,7 @@ export const IconServes = () => {
           {item.icon}
           <p>{item.name}</p>
         </div>
-      ))};
+      ))}
     </div>
   );
 };
