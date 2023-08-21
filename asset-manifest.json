@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.c0743f48.css",
-    "main.js": "./static/js/main.9e8268f3.js",
+    "main.css": "./static/css/main.6fa8448b.css",
+    "main.js": "./static/js/main.c8b581e7.js",
     "static/media/welcome__puppy.png": "./static/media/welcome__puppy.b1be486973892fcb7e85.png",
     "static/media/about-pets.png": "./static/media/about-pets.4e754a22757cdd9186e9.png",
     "static/media/donation-dog.png": "./static/media/donation-dog.50d0cad5be1d0d87b825.png",
@@ -26,13 +26,14 @@
     "static/media/icon-cups.svg": "./static/media/icon-cups.9697e90ab8aa7af6087c9e46c8a03358.svg",
     "static/media/icon-toys.svg": "./static/media/icon-toys.de0da61f230c46feb2f6b8c50c6e7269.svg",
     "static/media/icon-shampoos.svg": "./static/media/icon-shampoos.9e8589d176f27a8865f7488c2d90ee25.svg",
+    "static/media/credit-card.svg": "./static/media/credit-card.4ba0426d2bc74b7a78f3.svg",
     "static/media/icon-marker.svg": "./static/media/icon-marker.40f188612ed0886f77077fd5162d1fef.svg",
     "index.html": "./index.html",
-    "main.c0743f48.css.map": "./static/css/main.c0743f48.css.map",
-    "main.9e8268f3.js.map": "./static/js/main.9e8268f3.js.map"
+    "main.6fa8448b.css.map": "./static/css/main.6fa8448b.css.map",
+    "main.c8b581e7.js.map": "./static/js/main.c8b581e7.js.map"
   },
   "entrypoints": [
-    "static/css/main.c0743f48.css",
-    "static/js/main.9e8268f3.js"
+    "static/css/main.6fa8448b.css",
+    "static/js/main.c8b581e7.js"
   ]
 }
