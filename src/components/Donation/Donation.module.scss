@@ -1,19 +1,15 @@
-.donation {
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  grid-template-columns: auto 380px;
-  column-gap: 30px;
+.background {
+  background-color: var(--background-color-light-s);
+  padding-top: 80px;
+  padding-bottom: 100px;
 }
 
-.svgContainer {
+.donation {
   display: flex;
-  max-width: 100%;
-  justify-content: start;
-  align-items: start;
-  .logo {
-    max-width: 100%;
-  }
+  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
+  column-gap: 30px;
 }
 
 .wrapper {
@@ -22,25 +18,91 @@
   text-align-last: left;
   row-gap: 20px;
 }
-.background {
-  background-color: var(--background-color-light-s);
-  padding-top: 80px;
-  padding-bottom: 100px;
+
+.wrapper h3 {
+  max-width: 300px;
+  width: fit-content;
 }
+
+.wrapper p {
+  max-width: 380px;
+  width: fit-content;
+}
+
+.wrapper span {
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 0.9px;
+}
+
+.svgContainer {
+  display: flex;
+  min-width: 42%;
+  justify-content: start;
+  align-items: start;
+
+  .logo {
+    max-width: 100%;
+  }
+}
+
 .button {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  column-gap: 0.938rem;
-  font-family: "Georgia";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.25rem;
-  letter-spacing: 0.06em;
+  display: flex;
+  font-family: inherit;
+  max-width: 349px;
+  width: fit-content;
+  column-gap: 15px;
+  justify-content: space-between;
+  font-size: 15px;
+  letter-spacing: 1.2px;
   line-height: 115%;
   border: 1px solid var(--color-primary);
   background-color: var(--color-primary);
   color: var(--color-heading);
   border-radius: 9px;
-  padding: 0.438rem 0.938rem;
-  justify-self: start;
+  padding: 10px 15px;
+  align-items: center;
+
+  &::before {
+    content: url("../../../src/assets/svg/credit-card.svg");
+    width: fit-content;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .donation {
+    flex-direction: column-reverse;
+    text-align: center;
+
+    @media (max-width: 450px) {
+      .wrapper {
+        align-items: center;
+      }
+    }
+  }
+
+  @media (max-width: 330px) {
+    .wrapper h3 {
+      letter-spacing: 1px;
+    }
+  }
+
+  .wrapper span {
+    text-align: center;
+    letter-spacing: 0.5px;
+  }
+
+  .wrapper p {
+    text-align: justify;
+  }
+
+  .button {
+    column-gap: 10px;
+    padding: 5px 10px;
+  }
+
+  .svgContainer {
+    margin-top: 60px;
+  }
 }

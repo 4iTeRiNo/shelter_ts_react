@@ -8,19 +8,44 @@
   .wrapperLink {
     display: flex;
     justify-content: space-between;
-    column-gap: 5%;
+    width: 61%;
   }
 
-  .wrapperLogo{
+  .wrapperLogo {
     display: flex;
     position: relative;
     max-width: 100%;
     justify-content: end;
     align-items: end;
 
-
-    .logo{
-        max-width: 100%;
+    .logo {
+      max-width: 100%;
     }
+  }
+}
+
+@media (max-width: 869px) {
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .wrapperLogo {
+      margin-top: 65px;
+    }
+
+    .wrapperLink {
+      width: 100%;
+      justify-content: space-around;
+    }
+  }
+}
+
+@media (max-width: 669px) {
+  .wrapperLink {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 40px;
   }
 }

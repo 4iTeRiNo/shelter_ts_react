@@ -3,24 +3,29 @@ import { Content } from "../Content";
 import { HeaderTag } from "../HeaderTag";
 import styles from "./Slider.module.scss";
 import { SliderCard, SliderCardProps } from "./SliderCard";
-import { useState } from "react";
+import { ReactNode, useEffect, useState } from "react";
 import { pets } from "../../mock/dataPets";
-import { log } from "console";
 import { pet } from "../../types";
+import { useResize } from "../../utils/use-resize";
 
 interface SliderProps {
   slides: Array<SliderCardProps>;
 }
 
+const PAGE_WIDTH = 1104;
+
 export const Slider = (props: SliderProps) => {
-  // const [item, setItem] = useState([]);
+  const result = new Array();
   const [offset, setOffset] = useState(0);
-  // const [currentIndex, setCurrentIndex] = useState(0);
+  // const [slide, setSlide] = useState(result)
 
-  const COUNT_CARD = 3;
+  // const { width, isScreenSm, isScreenMd, isScreenLg, isScreenXl } = useResize();
 
-  function createCardGroup(arr: pet[]) {
-    const result = [];
+  function getCardRender() {
+    return createCardGroup(pets, 3)
+  }
+
+  function createCardGroup(arr: pet[], COUNT_CARD: number) {
     for (
       let i = 0, count = COUNT_CARD;
       i < arr.length;
@@ -28,75 +33,45 @@ export const Slider = (props: SliderProps) => {
     ) {
       result.push(arr.slice(i, count));
     }
-
     return result.map((item, i) => {
       return (
-        <ul
+        <div
           className={styles.cardContainer}
           key={i}
-          // style={{ order: `${i + 1}` }}
         >
-          {item.map((slide, index) => {
+          {item.map((slide: any, index: number) => {
             return <SliderCard key={index} {...slide} />;
           })}
-        </ul>
+        </div>
       );
     });
   }
 
-  // useState(currentIndex) => {
-  // }
+
+  // useEffect(() => {
+  //   console.log(slide[1]);
+  // }, [slide])
 
   const nextSlide = () => {
     setOffset((currentOffset) => {
-      let newOffset = currentOffset - 100;
-      if (currentOffset === newOffset - currentOffset)
-        return (newOffset = currentOffset + 200);
+      let newOffset = currentOffset - PAGE_WIDTH;
+      console.log(currentOffset);
       return newOffset;
     });
   };
+
   const prevSlide = () => {
     setOffset((currentOffset) => {
-      let newOffset = currentOffset + 100;
-      if (currentOffset === newOffset - currentOffset)
-      return (newOffset = currentOffset - 200);
-      // console.log(currentOffset);
-      
+      let newOffset = currentOffset + PAGE_WIDTH;
+      console.log(currentOffset);
       return newOffset;
     });
   };
-  // const changeSlide = (direction = 1) => {
-  //   let slideNumber = 0;
-
-  //   if (slide + direction < 0) {
-  //     slideNumber = item.length - 1;
-  //     console.log('aa');
-
-  //   } else {
-  //     slideNumber = (slide + direction) % item.length;
-  //     console.log('bb');
-  //   }
-  //   setSlide(slideNumber);
-  // };
-
-  // const goToSlide = (number: number) => {
-  //   setSlide(number % item.length);
-  // };
-
-  // type SliderHook = (
-  //   lenght: number,
-  //   step?: number,
-  //   isInfinite?: boolean
-  // ) => {
-  //   callback: (direction: "next" | "prev") => void;
-  //   next: boolean;
-  //   prev: boolean;
-  // };
 
   return (
     <section className={styles.background}>
-      <div className={styles.wrapper}>
-        <Content>
+      <Content>
+        <div className={styles.wrapper}>
           <HeaderTag
             color="dark"
             size="small"
@@ -105,18 +80,18 @@ export const Slider = (props: SliderProps) => {
           are looking for a house"
           />
           {
-            <div className={styles.wrapperCard}>
+            <div className={styles.wrapperSlider}>
               <div className={styles.arrow}>
                 <button className={styles.left} onClick={prevSlide}></button>
               </div>
-              <div className={styles.window}>
+              <div className={styles.windowCard}>
                 <ul
                   className={styles.allCard}
                   style={{
-                    transform: `translateX(${offset}%)`,
+                    transform: `translateX(${offset}px)`,
                   }}
                 >
-                  {createCardGroup(pets)}
+                  {getCardRender()}
                 </ul>
               </div>
               <div className={styles.arrow}>
@@ -125,8 +100,8 @@ export const Slider = (props: SliderProps) => {
             </div>
           }
           <Button children="Get to know the rest" />
-        </Content>
-      </div>
+        </div>
+      </Content>
     </section>
   );
 };

@@ -24,17 +24,17 @@ export const LocalInfo = ({
           children="For questions and suggestions"
         />
         <div className={styles.containerLink}>
-          <IconEmail />
+          <IconEmail className={styles.icon} />
           <Link
-            to={`mailto:${email}`}
+            to={`mailto: ${email}`}
             className={styles.link}
             children={email}
           />
         </div>
         <div className={styles.containerLink}>
-          <IconPhone />
+          <IconPhone className={styles.icon} />
           <Link
-            to={`tel:+${telephone}`}
+            to={`tel: ${telephone}`}
             className={styles.link}
             children={telephone}
           />
@@ -48,7 +48,7 @@ export const LocalInfo = ({
           children="We are waiting for your visit"
         />
         <div className={styles.containerLink}>
-          <IconPoint />
+          <IconPoint className={styles.icon} />
           <Link
             to="#"
             target="_blank"
@@ -57,7 +57,7 @@ export const LocalInfo = ({
           />
         </div>
         <div className={styles.containerLink}>
-          <IconPoint />
+          <IconPoint className={styles.icon} />
           <Link
             to="#"
             target="_blank"

@@ -5,6 +5,27 @@
   flex-wrap: wrap;
   gap: 3.6rem 7.5rem;
 }
+
 .icon {
   text-align: center;
+}
+
+@media (max-width: 947px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .container{
+    gap: 3.5rem 3.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

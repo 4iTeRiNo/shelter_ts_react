@@ -23,7 +23,7 @@
 --transition-hover: ease-in 0.2s;
 
 --max-width: 1280px;
---content-width: 1200px;
+--content-width: 1220px;
 --content-width-tablet: 708px;
 --content-small-tablet: 470px;
 --content-width-mobile: 300px;
@@ -36,8 +36,9 @@
 }
 
 body {
-  font-family: 'Space Mono', monospace;
+  font-family: "Georgia";  
   font-weight: 400;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--gray-50);

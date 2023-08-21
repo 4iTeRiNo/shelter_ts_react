@@ -1,32 +1,67 @@
 .welcome {
-  display: grid;
-  grid-template-columns: minmax(310px, 460px) minmax(50%, auto);
+  display: flex;
+  justify-content: space-between;
   margin-top: 5.625rem;
-  column-gap: 42px;
 }
+
 .wrapper {
-  margin-top: 163px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-left: 0;
+  margin: 0;
   row-gap: 42px;
+}
+
+.wrapper h2 {
+  width: 310px;
+  max-width: fit-content;
+}
+
+.wrapper p {
+  grid-column: 1 / 4;
+  width: fit-content;
+  max-width: 460px;
 }
 
 .svgContainer {
   display: flex;
-  position: relative;
-  max-width: 100%;
+  max-width: max-content;
+  width: 100%;
   justify-content: end;
   align-items: end;
+
   .logo {
     max-width: 100%;
+    object-fit: fill;
   }
 }
 
-.h1{
-  font-family: "Georgia";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 2.75rem;
-  line-height: 130%;
-  color: #fff;
+@media (max-width : 768px) {
+  .welcome {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .svgContainer {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width : 320px) {
+  .welcome {
+    flex-direction: column;
+    align-items: center;
+
+    .wrapper {
+      text-align: center;
+      justify-items: center;
+      align-items: center;
+    }
+  }
+
+  .svgContainer {
+    margin-top: 100px;
+  }
 }

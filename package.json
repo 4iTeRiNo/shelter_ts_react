@@ -1,29 +1,36 @@
 {
   "name": "shelter_react",
   "version": "0.1.0",
+  "homepage": ".",
   "private": true,
+  "repository": {
+    "url": "git+https://github.com/4iTeRiNo/shelter_ts_react",
+    "home-page": "https://4iterino.github.io/shelter_ts_react/"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.38",
-    "@types/react": "^18.2.15",
+    "@types/node": "^16.18.40",
+    "@types/react": "^18.2.19",
     "@types/react-dom": "^18.2.7",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.14.2",
     "react-scripts": "5.0.1",
-    "swiper": "^6.8.4",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "component": "generate-react component",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "component": "generate-react component"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -45,7 +52,8 @@
   },
   "devDependencies": {
     "classnames": "^2.3.2",
-    "generate-react-cli": "^8.3.0",
-    "sass": "^1.63.6"
+    "generate-react-cli": "^7.3.0",
+    "gh-pages": "^5.0.0",
+    "sass": "^1.64.2"
   }
 }

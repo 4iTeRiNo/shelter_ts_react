@@ -23,7 +23,6 @@ export const HeaderTag = ({
   tagName,
   color = "dark",
   size = "meddle",
-  href,
   children,
   className,
 }: HeaderTagProps) => {
@@ -37,6 +36,6 @@ export const HeaderTag = ({
         [styles.meddle]: size === "meddle",
       }),
     },
-    href ? <a href={href}>{children}</a> : <>{children}</>
+    children,
   );
 };
