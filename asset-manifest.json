@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.c0c74f62.css",
-    "main.js": "./static/js/main.33b2a4b6.js",
+    "main.css": "./static/css/main.0c0f8e17.css",
+    "main.js": "./static/js/main.e34ff9f2.js",
     "static/media/welcome__puppy.png": "./static/media/welcome__puppy.b1be486973892fcb7e85.png",
     "static/media/about-pets.png": "./static/media/about-pets.4e754a22757cdd9186e9.png",
     "static/media/donation-dog.png": "./static/media/donation-dog.50d0cad5be1d0d87b825.png",
@@ -29,11 +29,11 @@
     "static/media/credit-card.svg": "./static/media/credit-card.4ba0426d2bc74b7a78f3.svg",
     "static/media/icon-marker.svg": "./static/media/icon-marker.40f188612ed0886f77077fd5162d1fef.svg",
     "index.html": "./index.html",
-    "main.c0c74f62.css.map": "./static/css/main.c0c74f62.css.map",
-    "main.33b2a4b6.js.map": "./static/js/main.33b2a4b6.js.map"
+    "main.0c0f8e17.css.map": "./static/css/main.0c0f8e17.css.map",
+    "main.e34ff9f2.js.map": "./static/js/main.e34ff9f2.js.map"
   },
   "entrypoints": [
-    "static/css/main.c0c74f62.css",
-    "static/js/main.33b2a4b6.js"
+    "static/css/main.0c0f8e17.css",
+    "static/js/main.e34ff9f2.js"
   ]
 }
