@@ -5,7 +5,7 @@ import styles from "./HelpSection.module.scss";
 
 
 export const HelpSection = () => (
-  <section className={styles.helpSection}>
+  <section id="help" className={styles.helpSection}>
     <Content>
       <div className={styles.wrapper}>
         <span className={styles.headerContainer}>

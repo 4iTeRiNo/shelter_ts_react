@@ -6,9 +6,9 @@ import aboutLogo from "../../assets/about/about-pets.png";
 
 export const About = () => {
   return (
-    <section className={styles.background}>
+    <section id="about" className={styles.background}>
       <Content>
-        <div className={styles.about}>
+        <div  className={styles.about}>
           <div className={styles.svgContainer}>
             <img src={aboutLogo} alt="pets" className={styles.logo} />
           </div>

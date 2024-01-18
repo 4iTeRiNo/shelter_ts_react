@@ -1,11 +1,5 @@
 @import-normalize;
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding-inline-start: 0;
-}
-
 :root {
 --color-primary: #f1cdb3;
 --color-links-hover: #fafafa;
@@ -32,7 +26,12 @@
 --tablet-small-width2: 450px;
 --mobile-width: 320px;
 --mobile-small-width: 320px;
+}
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding-inline-start: 0;
 }
 
 body {

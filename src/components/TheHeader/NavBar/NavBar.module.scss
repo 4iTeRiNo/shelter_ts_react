@@ -1,21 +1,6 @@
 .navBar {
   justify-self: end;
 
-  @media (max-width: 690px) {
-    // top: 0;
-    // right: 0;
-    // width: 300%;
-    // min-height: 100vh;
-    // transform: translateX(100%);
-    // visibility: hidden;
-    // transition: all ease-in-out 0.6s;
-    // background: #292929;
-    // row-gap: 20px;
-    // align-items: center;
-    // justify-content: center;
-    // text-decoration: none;
-  }
-
   .container {
     display: flex;
     flex-direction: row;
@@ -64,8 +49,7 @@
   .toggle {
     padding: 0;
     border: 0;
-    right: 0;
-    top: 0;
+    right: 20px;
     background: transparent;
     float: right;
     z-index: 9999;

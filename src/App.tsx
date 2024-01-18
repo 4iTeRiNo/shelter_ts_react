@@ -1,37 +1,49 @@
-import { useEffect, useState } from "react";
-import { Container } from "./components/Container";
-import { Footer } from "./components/Footer";
-import { TheHeader } from "./components/TheHeader";
-import { TheStartScreen } from "./components/TheStartScreen";
-import { localInfo } from "./types";
-import { InfoComponyDefault } from "./mock";
-import { About } from "./components/About";
-import { Slider } from "./components/Slider";
-import { HelpSection } from "./components/HelpSection/IconServes";
-import { Donation } from "./components/Donation";
-import { pets } from "./mock/dataPets";
+import {Route, Routes} from 'react-router-dom';
+import {About} from './components/About';
+import {HelpSection} from './components/HelpSection';
+import {Donation} from './components/Donation';
+import NotFoundPage from './pages/NotFoundPage';
+import {HomePage} from './pages/HomePage';
+import {OurPetsPage} from './pages/OurPetsPage';
+import ScrollToAnchor from './hooks/UseScrollToAnchor';
+import {Slider} from './components/Slider';
 
 function App() {
-  const [local, setLocal] = useState<localInfo>(InfoComponyDefault);
-
-  useEffect(() => {
-    setLocal(local);
-  },[local]);
+  ScrollToAnchor();
   return (
-    <Container>
-      <TheHeader />
-      <TheStartScreen />
-      <About />
-      <Slider
-        slides={pets.map((pet) => ({
-          img: pet.img,
-          name: pet.name,
-        }))}
-      />
-      <HelpSection />
-      <Donation />
-      <Footer {...local} />
-    </Container>
+    <>
+      <Routes>
+        <Route
+          path='/'
+          element={<HomePage />}
+        >
+          <Route
+            path='about'
+            element={<About />}
+          />
+          <Route
+            path='help'
+            element={<HelpSection />}
+          />
+          <Route
+            path='slider'
+            element={<Slider />}
+          />
+          <Route
+            path='contact'
+            element={<Donation />}
+          />
+          <Route
+            path='*'
+            element={<NotFoundPage />}
+          />
+        </Route>
+        <Route
+          path='ourPets'
+          element={<OurPetsPage />}
+        />
+      </Routes>
+    </>
   );
 }
 

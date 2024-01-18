@@ -8,7 +8,7 @@ interface FooterProps extends localInfo {}
 
 export const Footer = (props: FooterProps) => {
   return (
-    <footer>
+    <footer id="contact">
       <Content>
         <div className={styles.footer}>
           <div className={styles.wrapperLink}>
