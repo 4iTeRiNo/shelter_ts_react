@@ -7,6 +7,7 @@ import {HomePage} from './pages/HomePage';
 import {OurPetsPage} from './pages/OurPetsPage';
 import ScrollToAnchor from './hooks/UseScrollToAnchor';
 import {Slider} from './components/Slider';
+import {useEffect} from 'react';
 
 function App() {
   ScrollToAnchor();
