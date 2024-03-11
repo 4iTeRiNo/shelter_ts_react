@@ -4,7 +4,7 @@
 
 <div align="center">
 
-## Работа с jsonArray, типами и хуками. Верстка многостраничного сайта по макету из ![Figma](https://www.figma.com/file/IOt2Xk3Natw5cidEXkXo6h/shelter?type=design&t=yASJNYjZSNAVPhD9-6) 
+## Работа с jsonArray, типами и хуками. Верстка многостраничного сайта по макету из [Figma](https://www.figma.com/file/IOt2Xk3Natw5cidEXkXo6h/shelter?type=design&t=yASJNYjZSNAVPhD9-6) 
 
 ##  Реализовано: 
 - Верстка адаптивная, кроссбраузерная, резинованая 
