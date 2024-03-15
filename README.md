@@ -4,13 +4,15 @@
 
 <div align="center">
 
-## Работа с jsonArray, типами и хуками. Верстка многостраничного сайта по макету из [Figma](https://www.figma.com/file/IOt2Xk3Natw5cidEXkXo6h/shelter?type=design&t=yASJNYjZSNAVPhD9-6) 
-
-##  Реализовано: 
-- Верстка адаптивная, кроссбраузерная, резинованая 
-- Слайдер
-- Пагинация
-- React Rout
-- работа с анимацией
-  
+## Привет, это веб-сайт сверстаный с библиотекой React + React Route по макету [Figma](https://www.figma.com/file/IOt2Xk3Natw5cidEXkXo6h/shelter?type=design&t=yASJNYjZSNAVPhD9-6);
 </div>
+
+
+##  Что было сделано: 
+- Верстка адаптивная, кроссбраузерная, резинованая; 
+- Слайдер, Пагинация;
+- Сайт имеет несколько страниц переход реализован посредством библиотеки React Route;
+- Первые шаги знакомства с React и TypeScript;
+
+### Развернутое приложение [туть](https://4iterino.github.io/webSite-Shelter/);
+  
